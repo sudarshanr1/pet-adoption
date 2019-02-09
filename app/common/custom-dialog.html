@@ -1,0 +1,9 @@
+<div class="ng-dialog" ng-if="dialog.displayDialog()">
+  <div class="ng-dialog-overlay" ng-click="dialog.closeDialog()"></div>
+  <div class="ng-dialog-dialog">
+    <div class="ng-dialog-close" ng-click="dialog.closeDialog()">X</div>
+    <div class="ng-dialog-content">
+      <img ng-src="app/{{ dialog.petToDisplay.image }}"></img>
+    </div>
+  </div>
+</div>

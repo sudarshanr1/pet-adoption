@@ -1,8 +1,17 @@
 function petListCtrl(PetsService) {
   var ctrl = this;
-  PetsService.getPets().then(result => {
-    ctrl.dogs = result.data.dogs;
-  });
+  ctrl.display = display;
+  function init() {
+    PetsService.getPets().then(result => {
+      ctrl.dogs = result.data.dogs;
+    });
+  }
+  init();
+
+  function display(isDisplay, pet) {
+    PetsService.setDisplayDialog(true);
+    PetsService.petToDisplay = pet;
+  }
 }
 
 module.exports = {
