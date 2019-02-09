@@ -9,7 +9,14 @@ export default class PetsService {
       this.displayDialog = isDisplay;
     }
   }
-  getPets() {
-    return this.$http.get(".././app/assets/data/dogs.json");
+
+  /*
+   * @Param count
+   * Return first set of dogs if count is 0
+   * if count is more than 0, return records accordingly
+   */
+  getPets(count) {
+    var url = ".././app/assets/data/dogs-" + parseInt(count++) + ".json";
+    return this.$http.get(url);
   }
 }
