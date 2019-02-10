@@ -65,6 +65,10 @@ contact {
   text-align: center;
 }
 
+about p {
+  padding: 10rem;
+}
+
 pet-list img {
   border-radius: 10px;
   padding: 5px;
