@@ -8,7 +8,7 @@ function petListCtrl($scope, PetsService) {
       ctrl.dogs = result.data.dogs;
     });
 
-    var element = document.getElementsByTagName("content")[0];
+    var element = document.getElementsByTagName("content");
     angular.element(element).bind("scroll", event => {
       var elem = event.currentTarget;
       if (elem.scrollHeight - elem.scrollTop === elem.offsetHeight) {

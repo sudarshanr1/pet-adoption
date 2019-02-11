@@ -2,13 +2,19 @@
 <html lang="en" ng-app="petadoption">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Find dogs for adoption, all kinds of dogs available for free. Care for animals, be human."
+    />
+    <meta name="author" content="asana" />
+    <meta name="robots" content="index, follow" />
+    <title>Welcome pet lovers</title>
     <link rel="stylesheet" href="app/assets/styles/app.css" />
     <script src="bin/app.bundle.js"></script>
   </head>
   <body>
-    <div ui-view="header"></div>
-    <div ui-view="content"></div>
-    <div ui-view="footer"></div>
+    <header ui-view="header"></header>
+    <content ui-view="content"></content>
+    <footer ui-view="footer"></footer>
   </body>
 </html>

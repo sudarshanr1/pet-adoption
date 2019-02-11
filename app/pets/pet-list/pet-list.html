@@ -1,5 +1,5 @@
 <ul>
   <li ng-repeat="pet in pets.dogs" ng-click="pets.display(true, pet)">
-    <img ng-src="app/{{ pet.image }}" alt="Forest" />
+    <img ng-src="app/{{ pet.image }}" alt="{{ pet.source }}" />
   </li>
 </ul>
