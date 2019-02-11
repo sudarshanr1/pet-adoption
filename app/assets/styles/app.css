@@ -106,7 +106,7 @@ ul li {
   opacity: 0.8;
 }
 
-.ng-dialog-dialog {
+.ng-dialog-wrap {
   background-color: #fff;
   box-shadow: 10px 10px #595554;
   border-radius: 4px;
@@ -138,7 +138,7 @@ ul li {
   font-family: "arial", "sans-serif";
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   header a {
     float: none;
     display: block;
@@ -147,5 +147,18 @@ ul li {
 
   .header-right {
     float: none;
+  }
+
+  pet-list img,
+  .ng-dialog-wrap {
+    width: 100%;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  content {
+    margin: 0;
   }
 }
