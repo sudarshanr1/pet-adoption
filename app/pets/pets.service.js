@@ -12,14 +12,19 @@ export default class PetsService {
 
   /*
    * @Param count
-   * Return first set of dogs if count is 0
    * if count is more than 0, return records accordingly
+   * Output: array of objects with image sorce and source of the image
    */
   getPets(count) {
     var url = ".././app/assets/data/dogs-" + parseInt(count++) + ".json";
     return this.$http.get(url);
   }
 
+  /*
+   * @Param array
+   * shuffles the array
+   * output: array with random sequence
+   */
   shuffle(arr) {
     var i, j, temp;
     for (i = arr.length - 1; i > 0; i--) {
